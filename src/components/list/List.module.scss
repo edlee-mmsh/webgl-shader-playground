@@ -1,0 +1,14 @@
+.list {
+  margin-top: 2rem;
+
+  button {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    opacity: 0.7;
+
+    &:hover {
+      text-decoration: underline;
+      opacity: 1;
+    }
+  }
+}
