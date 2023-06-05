@@ -17,7 +17,7 @@ function App() {
     ? lazy(
         () =>
           import(
-            `./examples/${activeExampleName.toLowerCase()}/${activeExampleName}`
+            `./examples/${activeExampleName.toLowerCase()}/${activeExampleName}.tsx`
           )
       )
     : null;
