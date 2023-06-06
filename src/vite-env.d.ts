@@ -4,4 +4,5 @@
 type Example = {
   id: number;
   name: string;
+  path: string;
 };

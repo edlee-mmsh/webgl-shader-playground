@@ -9,15 +9,15 @@ function App() {
   const [activeExampleId, setActiveExampleId] =
     useState<number>(firstExampleId);
 
-  const activeExampleName = data.find(
+  const activeExampleItem = data.find(
     (example) => example.id === activeExampleId
-  )?.name;
+  );
 
-  const ActiveExample = activeExampleName
+  const ActiveExample = activeExampleItem
     ? lazy(
         () =>
           import(
-            `./examples/${activeExampleName.toLowerCase()}/${activeExampleName}.tsx`
+            `./examples/${activeExampleItem.path}/${activeExampleItem.name}.tsx`
           )
       )
     : null;

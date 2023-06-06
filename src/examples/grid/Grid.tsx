@@ -5,7 +5,7 @@ import { shaderMaterial } from "@react-three/drei";
 import frag from "./glsl/fragment.glsl";
 import vert from "./glsl/vertex.glsl";
 
-export default function Basic() {
+export default function Grid() {
   const { slice } = useControls("params", {
     slice: {
       value: 10,
